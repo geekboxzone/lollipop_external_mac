@@ -99,6 +99,7 @@ public:
 
 	extern "C" {
 	 IAPEDecompress *  CreateIAPEDecompress(char * pFilename, int * pErrorCode,int flag);
+	 IAPEDecompress *  CreateIAPEDecompressFd(int fd,int64_t mOffset,int64_t mLength, int * pErrorCode,int flag);
 	}
 	#define COMPRESSION_LEVEL_FAST          1000
 	#define COMPRESSION_LEVEL_NORMAL        2000
